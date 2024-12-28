@@ -24,3 +24,37 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/*My solution*/
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  align-self: center;
+  margin: 30px;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.text{
+  text-align: center;
+}
+
+.one,
+.two,
+.three,
+.four{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 200px;
+  gap: 10px;
+}
