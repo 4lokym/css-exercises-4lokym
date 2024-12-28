@@ -1,7 +1,6 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "-apple-system", BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
-  min-height: 100vh;
 }
 
 .header {
@@ -26,4 +25,73 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/*my solution*/
+
+html,
+body,
+.big-container{
+  height: 100%;
+}
+
+.header{
+  display: flex;
+  font-weight: 1000;
+  font-size: 30px;
+  justify-content: start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.big-container,
+.front-container,
+.contents,
+.footer{
+  display: flex;
+}
+
+.big-container{
+  flex-direction: column;
+}
+
+.footer{
+  justify-content: center;
+  align-items: center;
+}
+
+.front-container{
+  flex:1;
+}
+
+.card{
+  max-width:250px;
+  max-height: 300px;
+  padding: 20px;
+}
+
+.contents{
+  padding: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+  padding: 20px;
+  margin:0;
+  font-size: 20px;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+.sidebar{
+  flex: 0 0 auto;
 }
